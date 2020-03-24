@@ -1,0 +1,51 @@
+// 清除默认样式
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//设置#outer
+#outer {
+  width: 520px;
+  height: 353px;
+  background-color: brown;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+
+  //设置#imgList
+  #imgList {
+    list-style: none;
+    // width: 2600px;//此处可在js中动态设置
+    position: absolute;
+    left: 0px;
+
+    //设置li
+    li {
+      float: left;
+      margin: 10px;
+    }
+  }
+
+  //设置#imgNav
+  #imgNav {
+    position: absolute;
+    bottom: 20px;
+    // left: ;//通过js动态设置
+
+    //设置a
+    a {
+      float: left;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+      background-color: crimson;
+      opacity: 0.5;
+
+      //设置hover
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}
